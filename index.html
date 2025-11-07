@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Expense Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-700 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded-2xl shadow-lg w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center text-black-600 mb-4">Income Expense Calculator</h1>
+
+    <!-- Totals -->
+    <div class="flex justify-between text-center mb-6">
+      <div>
+        <p class="text-green-600 font-semibold">Income</p>
+        <p id="totalIncome" class="font-bold text-lg">₹0</p>
+      </div>
+      <div>
+        <p class="text-red-600 font-semibold">Expense</p>
+        <p id="totalExpense" class="font-bold text-lg">₹0</p>
+      </div>
+      <div>
+        <p class="text-blue-600 font-semibold">Balance</p>
+        <p id="netBalance" class="font-bold text-lg">₹0</p>
+      </div>
+    </div>
+
+    <!-- Input Form -->
+    <div class="mb-4">
+      <input type="text" id="description" placeholder="Description"
+        class="border rounded w-full p-2 mb-2" />
+      <input type="number" id="amount" placeholder="Amount"
+        class="border rounded w-full p-2 mb-2" />
+      <select id="type" class="border rounded w-full p-2 mb-2">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <div class="flex justify-between">
+        <button id="addBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Add</button>
+        <button id="resetBtn" class="bg-gray-400 text-white px-4 py-2 rounded">Reset</button>
+      </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex justify-center gap-3 mb-4">
+      <label><input type="radio" name="filter" value="all" checked> All</label>
+      <label><input type="radio" name="filter" value="income"> Income</label>
+      <label><input type="radio" name="filter" value="expense"> Expense</label>
+    </div>
+
+    <!-- Entries List -->
+    <ul id="entryList" class="space-y-2"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
