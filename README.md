@@ -1,10 +1,10 @@
-1.Income Expense Calculator
+## Income Expense Calculator
 
 A simple and responsive web app to manage your income and expenses.  
 Built using "HTML" ,"TailwindCSS" and "JavaScript" with full CRUD functionality and "Local Storage" support.
 
 
-2.Features
+## Features
 
 -  Add, Edit, Delete entries (CRUD)
 -  Filter entries by: All / Income / Expense
@@ -14,14 +14,14 @@ Built using "HTML" ,"TailwindCSS" and "JavaScript" with full CRUD functionality 
 -  Fully responsive design using TailwindCSS
 
 
-3.Tech Stack
+## Tech Stack
 
 - HTML5
 - TailwindCSS
 - JavaScript (ES6)
 
 
-4.How It Works
+## How It Works
 
 1. Enter a "description" "amount" and select type (Income or Expense).
 2. Click "Add" to save the entry.
@@ -30,7 +30,7 @@ Built using "HTML" ,"TailwindCSS" and "JavaScript" with full CRUD functionality 
 5. All data is saved in "Local Storage", so it remains after refreshing the page.
 
 
-5.Setup Instructions
+## Setup Instructions
 
 1. Download or clone the repository.
 2. Open the `index.html` file in any web browser.
@@ -38,11 +38,11 @@ Built using "HTML" ,"TailwindCSS" and "JavaScript" with full CRUD functionality 
 
 
 
-6.Reset / Clear Data
+## Reset / Clear Data
 - Click the 'Reset' button to clear only input fields.
 - To completely remove saved data, open DevTools → Application → Local Storage → Clear entries.
 
 
-7.Preview
+## Preview
 
 A simple and clean UI with TailwindCSS components showing totals, filters, and editable entries.
